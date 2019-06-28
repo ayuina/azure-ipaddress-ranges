@@ -2,12 +2,27 @@
 
 ## How to use
 
-See powershell script
+List service tags of Public Azure: 
+```
+PS > .\azip.ps1 -list
+```
 
-or
+Then retrieve ip adress ranges for whole japane east region, or AppServices only 
+```
+PS > .\azip.ps1 -service AzureCloud.japaneast
+PS > .\azip.ps1 -service AppService.japaneast
+```
 
+If you want to get informations for other cloud, use `cloud` option.
+```
+PS > .\azip.ps1 -cloud germany -list
+PS > .\azip.ps1 -cloud germany -service sql
+PS > .\azip.ps1 -cloud germany -service storage.germancentral
+```
+
+If you need mode detail :
 ```pwsh
-PS > help azip.ps1
+PS > help .\azip.ps1
 ```
 
 ## Specification
@@ -23,7 +38,7 @@ This script downloads json file from confirmation pages with web scraping like b
 
 ![scraping.png](./scraping.png)
 
-and save and re-use downloaded json daily.
+Then save and re-use downloaded json in daily manner.
 If you want to clear cache, check the path with Verbose option.
 
 ```pwsh
