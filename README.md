@@ -1,3 +1,9 @@
+# THIS REPOSITORY WAS ARCHIVED
+
+Should use official commands like below:
+[Get-AzNetworkServiceTag](https://docs.microsoft.com/en-us/powershell/module/az.network/get-aznetworkservicetag?view=azps-8.0.0)
+
+
 # Azure IP address and Service tags helper script
 
 ## How to use
